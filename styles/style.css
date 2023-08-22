@@ -3,41 +3,203 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* black white gainsboro*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+header {
+    width: 100%;
+    height: 20rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gainsboro;
+}
+.banner-home {
+    background-image: url("../images/banner.jpg");
+    width: 100%;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+}
+h6 {
+    display: none;
+}
+.header-tittle-and-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 4rem;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+h2 {
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.card-img {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+h3 {
+    font-size: large;
 
 }
+main p {
+    font-size: medium;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+ul {
+    list-style: inside;
+}
+table {
+    border: 0.1rem black solid;
+}
+table td {
+    border: 0.1rem black solid;
+}
+table th {
+    border: 0.1rem black solid;
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.footer-h4 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    nav a {
+    padding: 0.5rem;
+    }
+    .card {
+        width: 15rem;
+    }
+    main p {
+        font-size: small;
+    }
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    table{
+        margin: 1rem;
+    }
+    table tr td {
+        padding: 0.5rem;
+        
+    }
+    table tr th {
+        padding: 0.7rem;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 @media screen and (min-width: 1023px) {
+    nav {
+        margin: 1rem;
+    }
+    nav a {
+        padding: 0.5rem;
+        }
+        h3{
+            font-size: large;
+        }
+        .card-img {
+            width: 20rem;
+            height: 13rem;
+        }
+        h3 {
+            margin-left: 50%;
+        }
+        .card {
+            align-items: start;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 15rem;
+        }
+        main p {
+            font-size: 1.2rem;
+        }
+        .container {
+
+            margin: 2rem;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .card-p {
+            width: 21rem;
+        }
+        table{
+            margin: 1rem;
+        }
+        table tr td {
+            padding: 1rem;
+            
+        }
+        table tr th {
+            padding: 1rem;
+        }
+        footer {
+            height: 4rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            margin: 1rem;
+            align-self: flex-start;
+        }
+        .footer-h4 {
+            font-size: larger;
+            margin-left: 1rem;
+        }
+        footer form {
+            font-size: larger;
+        }
+        footer a {
+            margin-right: 1rem;
+            font-size: larger;
+        }
 
 }

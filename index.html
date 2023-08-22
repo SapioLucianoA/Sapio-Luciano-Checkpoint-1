@@ -3,19 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game State | Home</title>
     <link rel="stylesheet" href="./styles/style.css">
-    
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-
+        <div class="header-tittle-and-nav">
+            <h1>Game State</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Events</a>
+            </nav>
+        </div>
+        <div class="banner-home">
+            <h6>Banner</h6>
+        </div>
     </header>
     <main>
-
+        <div>
+            <h2>Check your events!</h2>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3>Arcade Games</h3>
+                <img src="./images/machine.jpg" alt="arcade-img-card" class="card-img">
+                <p class="card-p">We will give you a token to be able to play with your friends in all arcade machines.</p>
+            </div>
+            <div class="card">
+                <h3>PC Games </h3>
+                <img src="./images/pc.jpg" alt="PC-img-card" class="card-img">
+                <p class="card-p">You can participate in our pc games tournament.</p>
+            </div>
+            <div class="card">
+                <h3>Table Games</h3>
+                <img src="./images/table.jpg" alt="tablegame-img-card" class="card-img">
+                <p class="card-p">You can play unlimited board games with your friends.</p>
+            </div>
+        </div>
+        <div>
+            <h2>Schedule</h2>
+        </div>
+        <div class="container">
+            <ul>
+                <li>Arcade Games </li>
+                <li>PC Games</li>
+                <li>Table Games</li>
+            </ul>
+            <table>
+                <tr>
+                    <th>Event</th>
+                    <th>Day</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Arcade Games</td>
+                    <td>Monday and Wednesday</td>
+                    <td>8 hours</td>
+                </tr>
+                <tr>
+                    <td>PC Games</td>
+                    <td>Monday, Tuesday and Wednesday </td>
+                    <td>6 hours</td>
+                </tr>
+                <tr>
+                    <td>Table Games</td>
+                    <td>Thuesday and Thursday</td>
+                    <td>4 hours</td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
-
+        <h4 class="footer-h4">Cohort N</h4>
+        <form action="./pages/show_data.html" method="get">
+            <fieldset>
+                <legend> Subscribe!</legend>
+                <label for="Email">Email:</label>
+                <input type="email" name="Subscribe-email" id="Email" placeholder="email@example.com">
+                 <input type="button" value="Send">
+            </fieldset>
+        </form>
+        <a href="emailto:gamestate@mh.com">gamestate@mh.com</a>
     </footer>
 </body>
 </html>
